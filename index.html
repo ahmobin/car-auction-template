@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Auction Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Top Header with Social Icons -->
+<div class="top-header py-2">
+    <div class="container text-center">
+        <div class="social-icons">
+            <a href="#" class="text-white mx-2"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="Logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Auction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Statistics</a>
+                </li>
+            </ul>
+            <div class="navbar-icons d-flex">
+                <a href="#" class="nav-link text-white"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="8" r="3" stroke="#1C274C" stroke-width="1.5"/>
+                    <circle cx="11" cy="11" r="10" stroke="#1C274C" stroke-width="1.5"/>
+                    <path d="M16.9691 19C16.81 16.1085 15.9247 14 10.9999 14C6.07521 14 5.18991 16.1085 5.03076 19" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                </a> <!-- Account Icon -->
+                <a href="#" class="nav-link text-white"><svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10.4282" cy="11" r="3" stroke="#1C274C" stroke-width="1.5"/>
+                    <path d="M12.1936 1.15224C11.826 1 11.3601 1 10.4282 1C9.49633 1 9.03039 1 8.66284 1.15224C8.17279 1.35523 7.78344 1.74458 7.58045 2.23463C7.48779 2.45834 7.45153 2.7185 7.43734 3.09799C7.41648 3.65568 7.13048 4.17189 6.64717 4.45093C6.16386 4.72996 5.57381 4.71954 5.08042 4.45876C4.74467 4.2813 4.50123 4.18262 4.26116 4.15102C3.73526 4.08178 3.2034 4.22429 2.78258 4.5472C2.46697 4.78938 2.234 5.1929 1.76805 5.99993C1.30211 6.80697 1.06914 7.21048 1.01722 7.60491C0.947981 8.1308 1.09049 8.66266 1.4134 9.08348C1.56079 9.27556 1.76793 9.43703 2.08941 9.63902C2.56202 9.93598 2.86611 10.4419 2.86608 11C2.86605 11.5581 2.56197 12.0639 2.08941 12.3608C1.76787 12.5629 1.5607 12.7244 1.4133 12.9165C1.09039 13.3373 0.947883 13.8691 1.01712 14.395C1.06904 14.7894 1.30202 15.193 1.76796 16C2.2339 16.807 2.46687 17.2106 2.78248 17.4527C3.20331 17.7756 3.73517 17.9181 4.26106 17.8489C4.50112 17.8173 4.74454 17.7186 5.08026 17.5412C5.57369 17.2804 6.16378 17.27 6.64712 17.549C7.13046 17.8281 7.41648 18.3443 7.43734 18.9021C7.45153 19.2815 7.48779 19.5417 7.58045 19.7654C7.78344 20.2554 8.17279 20.6448 8.66284 20.8478C9.03039 21 9.49633 21 10.4282 21C11.3601 21 11.826 21 12.1936 20.8478C12.6836 20.6448 13.073 20.2554 13.276 19.7654C13.3686 19.5417 13.4049 19.2815 13.4191 18.902C13.4399 18.3443 13.7259 17.8281 14.2092 17.549C14.6925 17.2699 15.2826 17.2804 15.7761 17.5412C16.1118 17.7186 16.3552 17.8172 16.5953 17.8488C17.1212 17.9181 17.653 17.7756 18.0738 17.4527C18.3895 17.2105 18.6224 16.807 19.0884 15.9999C19.5543 15.1929 19.7873 14.7894 19.8392 14.395C19.9084 13.8691 19.7659 13.3372 19.443 12.9164C19.2956 12.7243 19.0885 12.5628 18.767 12.3608C18.2944 12.0639 17.9903 11.558 17.9903 10.9999C17.9904 10.4418 18.2944 9.93608 18.767 9.63919C19.0885 9.43715 19.2957 9.27566 19.4431 9.08355C19.766 8.66273 19.9085 8.13087 19.8393 7.60497C19.7874 7.21055 19.5544 6.80703 19.0885 6C18.6225 5.19297 18.3896 4.78945 18.0739 4.54727C17.6531 4.22436 17.1213 4.08185 16.5954 4.15109C16.3553 4.18269 16.1119 4.28136 15.7762 4.4588C15.2827 4.71959 14.6926 4.73002 14.2093 4.45096C13.726 4.17191 13.4399 3.65566 13.4191 3.09794C13.4049 2.71848 13.3686 2.45833 13.276 2.23463C13.073 1.74458 12.6836 1.35523 12.1936 1.15224Z" stroke="#1C274C" stroke-width="1.5"/>
+                </svg>
+                </a>  <!-- Settings Icon -->
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Left Side: Text and Input Form -->
+            <div class="col-md-6 hero-text">
+                <h3>Check Your </h3>
+                <h2>Car Auction Report</h2>
+                <p>Is car auction report with mileage, condition, grade price and status</p>
+
+                <!-- Chassis ID Form -->
+                <form class="chassis-form p-4">
+                    <label class="mb-1">Chassis ID-Number or VIN</label>
+                    <input type="text" class="form-control chassis-input" placeholder="NFUAE141-57972024">
+                    <div class="button-group">
+                        <button type="submit" class="btn btn-find w-50">Find</button>
+                        <button type="reset" class="btn btn-reset w-50">Reset</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Right Side: Car Image -->
+            <div class="col-md-6 text-center">
+                <img src="img/banner-img.png" alt="Car" class="car-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="report-section">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12 py-4">
+                <p>Get your Report Guide by clicking here</p>
+                <a href="" class="btn btn-purple">Report Download Guide</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="pricing py-5 text-center">
+    <div class="container">
+        <h2>Pricing Package</h2>
+        <div class="row mt-4">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Basic</h5>
+                        <svg width="63" height="72" viewBox="0 0 63 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_2034_131)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M42.4282 8.44349L47.9171 13.9248C55.9841 21.9805 60.0176 26.0084 60.0176 31.0136C60.0176 36.0188 55.9841 40.0467 47.9171 48.1024C39.8502 56.1582 35.8167 60.1861 30.8045 60.1861C25.7924 60.1861 21.7589 56.1582 13.6919 48.1024L8.20303 42.6212C3.56643 37.991 1.24813 35.6759 0.385495 32.6723C-0.477139 29.6686 0.26008 26.4784 1.73452 20.0981L2.5848 16.4187C3.82525 11.0508 4.44547 8.36692 6.28591 6.52904C8.12635 4.69116 10.814 4.07179 16.1893 2.83306L19.8738 1.98396C26.2631 0.511574 29.4577 -0.22462 32.4655 0.636815C35.4733 1.49825 37.7916 3.81333 42.4282 8.44349ZM27.4576 37.2033C25.4387 35.1872 25.4558 32.2945 26.6632 30.002C26.0598 29.1268 26.1478 27.9194 26.9273 27.1411C27.7039 26.3655 28.9069 26.2755 29.7826 26.8708C30.8022 26.3297 31.9225 26.0435 33.0388 26.054C34.2814 26.0657 35.2792 27.0811 35.2675 28.322C35.2558 29.5629 34.2389 30.5593 32.9964 30.5476C32.4657 30.5426 31.7681 30.7804 31.1699 31.3778C30.0073 32.5388 30.3131 33.6997 30.6396 34.0258C30.9661 34.3518 32.1286 34.6572 33.2912 33.4962C35.6433 31.1473 39.7044 30.3678 42.3068 32.9666C44.3257 34.9827 44.3086 37.8754 43.1013 40.1679C43.7046 41.0432 43.6166 42.2505 42.8372 43.0289C42.0604 43.8046 40.857 43.8945 39.9812 43.2988C38.6106 44.0262 37.0513 44.2988 35.5647 43.9937C34.3475 43.7439 33.5635 42.5561 33.8136 41.3405C34.0638 40.125 35.2533 39.3422 36.4705 39.592C37.002 39.701 37.8588 39.5269 38.5945 38.7921C39.7571 37.6311 39.4514 36.4702 39.1249 36.1442C38.7984 35.8181 37.6358 35.5128 36.4732 36.6737C34.1211 39.0226 30.06 39.8022 27.4576 37.2033ZM24.0805 25.1142C26.4236 22.7743 26.4236 18.9806 24.0805 16.6407C21.7373 14.3008 17.9383 14.3008 15.5952 16.6407C13.252 18.9806 13.252 22.7743 15.5952 25.1142C17.9383 27.4541 21.7373 27.4541 24.0805 25.1142Z" fill="url(#paint0_linear_2034_131)" shape-rendering="crispEdges"/>
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_2034_131" x="0.0175781" y="0.269409" width="62" height="61.9167" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dx="1" dy="1"/>
+                                    <feGaussianBlur stdDeviation="0.5"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2034_131"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2034_131" result="shape"/>
+                                </filter>
+                                <linearGradient id="paint0_linear_2034_131" x1="30.0176" y1="0.269409" x2="30.0176" y2="60.1861" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#12FFCD" stop-opacity="0.4"/>
+                                    <stop offset="1" stop-color="#146CEF"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <hr>
+                        <p class="report-price">$110 USD (30,000 BDT)</p>
+                        <p class="btn price-save">(Save $25 USD)</p>
+                        <p class="report-nums">Reports: 35</p>
+                        <a href="#" class="w-100 btn btn-reset">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Standard</h5>
+                        <svg width="61" height="72" viewBox="0 0 61 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_2034_145)">
+                                <path d="M10.2536 40.3511L5.27591 25.4387C0.927475 12.4115 -1.24674 5.8979 2.19633 2.4596C5.63941 -0.978695 12.1621 1.1925 25.2074 5.5349L40.1405 10.5057C50.6693 14.0104 55.9337 15.7628 57.4297 18.3325C58.8529 20.7771 58.8529 23.7964 57.4297 26.241C55.9337 28.8107 50.6693 30.5631 40.1405 34.0678C38.8356 34.5022 37.3676 34.192 36.3906 33.2253L20.4242 17.4289C19.526 16.5402 18.0764 16.5469 17.1864 17.4439C16.2965 18.3409 16.3033 19.7885 17.2015 20.6772L32.91 36.2186C33.987 37.2841 34.3279 38.9148 33.8485 40.351C30.3389 50.8652 28.5841 56.1223 26.0108 57.6162C23.5628 59.0374 20.5393 59.0374 18.0913 57.6162C15.518 56.1223 13.7632 50.8652 10.2536 40.3511Z" fill="url(#paint0_linear_2034_145)" shape-rendering="crispEdges"/>
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_2034_145" x="0.49707" y="0.762695" width="60" height="59.9194" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dx="1" dy="1"/>
+                                    <feGaussianBlur stdDeviation="0.5"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2034_145"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2034_145" result="shape"/>
+                                </filter>
+                                <linearGradient id="paint0_linear_2034_145" x1="29.4971" y1="0.762695" x2="29.4971" y2="58.6821" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#12FFCD" stop-opacity="0.4"/>
+                                    <stop offset="1" stop-color="#146CEF"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <hr>
+                        <p class="report-price">$110 USD (30,000 BDT)</p>
+                        <p class="btn price-save">(Save $25 USD)</p>
+                        <p class="report-nums">Reports: 35</p>
+                        <a href="#" class="w-100 btn btn-reset">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Premium</h5>
+                        <svg width="61" height="72" viewBox="0 0 61 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_2034_159)">
+                                <path d="M41.2958 31.7866C37.7192 27.5132 35.931 25.3764 33.8753 25.7056C31.8196 26.0347 30.8579 28.6117 28.9345 33.7656L28.4369 35.099C27.8903 36.5636 27.617 37.2959 27.0853 37.8354C26.5535 38.3748 25.8235 38.6603 24.3636 39.2313L23.0344 39.7512C17.8967 41.7606 15.3279 42.7653 15.0349 44.8189C14.7419 46.8725 16.9189 48.615 21.2727 52.0999L22.3991 53.0014C23.6363 53.9917 24.2549 54.4869 24.613 55.1647C24.9711 55.8424 25.0281 56.6261 25.1421 58.1933L25.2459 59.6202C25.6472 65.1356 25.8479 67.8932 27.7225 68.8333C29.5971 69.7734 31.9042 68.2733 36.5185 65.2731L37.7122 64.4969C39.0234 63.6444 39.6791 63.2181 40.4321 63.0975C41.1851 62.977 41.9504 63.1758 43.4808 63.5734L44.8741 63.9354C50.2598 65.3346 52.9527 66.0343 54.4042 64.5617C55.8558 63.0891 55.1047 60.4195 53.6027 55.0804L53.2141 53.6991C52.7872 52.1819 52.5738 51.4233 52.6811 50.671C52.7884 49.9188 53.2043 49.258 54.0362 47.9364L54.7935 46.7333C57.7207 42.0827 59.1844 39.7574 58.2069 37.9072C57.2293 36.057 54.4581 35.9073 48.9155 35.6077L47.4816 35.5302C45.9065 35.4451 45.119 35.4025 44.4323 35.0581C43.7456 34.7138 43.2374 34.1066 42.2211 32.8922L41.2958 31.7866Z" fill="url(#paint0_linear_2034_159)" shape-rendering="crispEdges"/>
+                                <path d="M39.9412 11.798L40.6047 13.687C41.3334 15.7618 41.6978 16.7993 42.4068 17.5635C43.1158 18.3277 44.0891 18.7321 46.0357 19.5411L47.808 20.2776C54.6582 23.1242 58.0833 24.5476 58.474 27.4569C58.6366 28.6679 58.2286 29.8025 57.2781 31.0705C56.9569 30.9837 56.6477 30.913 56.357 30.8539C54.4497 30.4667 52.0237 30.3361 49.5512 30.2031L47.7759 30.1072C47.4345 30.0888 47.169 30.0743 46.9416 30.0596C46.7909 29.8835 46.6174 29.6763 46.3938 29.4091L45.2496 28.042C43.6533 26.1337 42.0914 24.2665 40.6389 22.9703C39.0899 21.588 36.5005 19.7851 33.015 20.3431C29.4924 20.9071 27.6133 23.4666 26.5996 25.2935C25.6604 26.9861 24.8157 29.2513 23.9605 31.5448L23.3421 33.2019C23.2377 33.4818 23.1539 33.7062 23.0801 33.8991C22.8868 33.9765 22.6619 34.0645 22.381 34.1744L20.7299 34.8201C18.443 35.7139 16.1866 36.5957 14.5065 37.5611C12.6986 38.5999 10.1563 40.5185 9.65222 44.0521C9.15291 47.5521 11.0195 50.1071 12.4325 51.6222C13.4855 52.7515 14.9004 53.9427 16.4111 55.1635C10.725 56.704 7.7005 57.2786 5.98153 55.4257C4.04612 53.3396 5.04751 49.5577 7.05029 41.994L7.56844 40.0371C8.13756 37.8877 8.42213 36.8131 8.27903 35.7473C8.13594 34.6816 7.58138 33.7455 6.47227 31.8733L5.46252 30.1689C1.55951 23.5806 -0.39199 20.2864 0.911366 17.6653C2.21472 15.0442 5.90976 14.832 13.2998 14.4076L15.2118 14.2978C17.3118 14.1772 18.3618 14.1169 19.2774 13.6291C20.193 13.1412 20.8706 12.281 22.2257 10.5607L23.4594 8.99441C28.2282 2.94036 30.6125 -0.0866663 33.3535 0.379574C36.0944 0.845815 37.3767 4.49654 39.9412 11.798Z" fill="url(#paint1_linear_2034_159)" shape-rendering="crispEdges"/>
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_2034_159" x="0.508789" y="0.332764" width="60" height="70.7793" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dx="1" dy="1"/>
+                                    <feGaussianBlur stdDeviation="0.5"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2034_159"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2034_159" result="shape"/>
+                                </filter>
+                                <linearGradient id="paint0_linear_2034_159" x1="29.5088" y1="0.332764" x2="29.5088" y2="69.1121" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#12FFCD" stop-opacity="0.4"/>
+                                    <stop offset="1" stop-color="#146CEF"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_2034_159" x1="29.5088" y1="0.332764" x2="29.5088" y2="69.1121" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#12FFCD" stop-opacity="0.4"/>
+                                    <stop offset="1" stop-color="#146CEF"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <hr>
+                        <p class="report-price">$110 USD (30,000 BDT)</p>
+                        <p class="btn price-save">(Save $25 USD)</p>
+                        <p class="report-nums">Reports: 35</p>
+                        <a href="#" class="w-100 btn btn-reset">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq py-5 bg-light">
+    <div class="container">
+        <h2>FAQ</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What is Car Auction Report Checker?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Car Auction Report Checker allows users to check the history of a car being auctioned.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Why should we check the Auction Report History?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Checking the history helps ensure you get a vehicle with no hidden issues.
+                    </div>
+                </div>
+            </div>
+            <!-- Add more FAQ items as needed -->
+        </div>
+    </div>
+</section>
+
+<!-- Blog Section -->
+<section class="blog py-5">
+    <div class="container text-center">
+        <h2>Blog</h2>
+        <div class="row mt-4">
+            <div class="col-lg-4">
+                <img src="image1.jpg" class="img-fluid" alt="Blog 1">
+                <h5>Blog Title 1</h5>
+            </div>
+            <div class="col-lg-4">
+                <img src="image2.jpg" class="img-fluid" alt="Blog 2">
+                <h5>Blog Title 2</h5>
+            </div>
+            <div class="col-lg-4">
+                <img src="image3.jpg" class="img-fluid" alt="Blog 3">
+                <h5>Blog Title 3</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white py-4">
+    <div class="container text-center">
+        <p>&copy; 2024 Car Auction Report. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+
+
+.btn-purple {
+    background-color: #210070;
+    color: #fff;
+}
+
+.btn-purple:hover {
+    background-color: #000259;
+    color: #fff;
+    transition: 0.05s;
+}
+
+.btn-find {
+    background-color: #0a0028;
+    color: white;
+    
+}
+
+.btn-reset {
+    background-color: #00e0d0;
+    color: white;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Top Header */
+.top-header {
+    background-color: #210070; /* Background color */
+    color: white;
+}
+
+.top-header .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    font-size: 16px; /* Adjust the size of icons */
+}
+
+.top-header .social-icons a:hover {
+    color: #ddd; /* Hover effect for the icons */
+}
+
+/* Navbar Icons Styling */
+.navbar .navbar-nav .nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 500;
+}
+.navbar-icons a {
+    font-size: 20px; /* Adjust icon size */
+    margin-left: 20px; /* Space between icons */
+}
+
+.navbar-icons a:hover {
+    color: #ddd; /* Hover effect for icons */
+}
+
+.navbar-brand img {
+    max-width: 160px; /* Adjust logo size */
+}
+
+.navbar-nav .nav-link.active {
+    color: #00e0d0; /* Change active link text color */
+    position: relative;
+}
+
+.navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    width: 100%; /* Adjust width to control the length of the underline */
+    height: 3px; /* Adjust thickness of the underline */
+    background-color: #00e0d0; /* Match color to the active link text */
+    left: 0%; /* Center the underline under the text */
+    bottom: -5px; /* Position the underline a little below the text */
+    border-radius: 5px; /* Optional: make the underline slightly rounded */
+}
+
+
+.hero-section {
+    background: linear-gradient(180deg, rgba(18, 255, 205, 0.4) 0%, #146CEF 200%);
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.hero-text h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #787878;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #210070;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #8c8c8c;
+    margin-bottom: 30px;
+}
+
+.chassis-form {
+    background: linear-gradient(180deg, rgba(18, 255, 205, 0.4) 0%, #146CEF 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+.chassis-form label {
+    font-size: 18px;
+    color: #210070;
+    text-align: center;
+}
+
+.chassis-input {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+
+.car-image {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section::before {
+    width: 400px;
+    height: 400px;
+    top: 50px;
+    left: 60%;
+}
+
+.hero-section::after {
+    width: 200px;
+    height: 200px;
+    bottom: 80px;
+    right: 15%;
+}
+
+
+
+.report-section p {
+    font-size: 19px;
+    color: #210070;
+    font-weight: 500;
+}
+
+.pricing {
+    background: linear-gradient(180deg, rgba(18, 255, 205, 0.4) 0%, #146CEF 100%);
+}
+
+
+.pricing .card {
+    border: none;
+    background-color: #f1faff;
+}
+
+.pricing .card .card-body h5 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #210070;
+}
+
+.pricing .report-price {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #210070;
+}
+
+.pricing .price-save {
+    background: linear-gradient(180deg, rgba(18, 255, 205, 0.4) 0%, #146CEF 100%);
+    color: #210070;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+}
+
+.pricing .report-nums {
+    color: #210070;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.faq .accordion-button {
+    background-color: #fff;
+    color: #333;
+}
+
+.faq .accordion-button:not(.collapsed) {
+    background-color: #007bff;
+    color: white;
+}
+
+.footer {
+    background-color: #101820;
+    color: #fff;
+}
+
+.footer .social-links img {
+    width: 30px;
+    margin: 0 10px;
+}
