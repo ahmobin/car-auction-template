@@ -340,6 +340,8 @@ body {
 .blog-subheading {
     font-size: 16px;
     color: #666;
+    max-width: 40%;
+    margin: auto;
 }
 
 /* Main article styling */
