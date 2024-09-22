@@ -14,12 +14,24 @@
 .btn-find {
     background-color: #0a0028;
     color: white;
-    
+}
+
+.btn-find:hover {
+    background-color: #0f2028;
+    color: white;
+    transition: 0.05s;
 }
 
 .btn-reset {
     background-color: #00e0d0;
     color: white;
+    transition: 0.05s;
+}
+
+.btn-reset:hover {
+    background-color: #00f9e9;
+    color: #fff;
+    transition: 0.05s;
 }
 
 /* General Styles */
