@@ -201,22 +201,293 @@ body {
     line-height: 24px;
 }
 
-.faq .accordion-button {
-    background-color: #fff;
+/* FAQ Section Styling */
+.faq-section {
+    padding: 40px;
+}
+
+.faq-heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: #210070;
+}
+
+.accordion-item {
+    border: none;
+    /*background-color: #F8F4FF;*/
+    margin-bottom: 15px; /* Add bottom space after each accordion item */
+}
+
+.accordion-header {
+    background-color: #F8F4FF;
+}
+
+
+.accordion-button {
+    background-color: white;
+    color: #210070;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #210070; /* Active accordion background color */
+    color: white; /* Active accordion text color */
+}
+
+/* White arrow icon when active */
+.accordion-button:not(.collapsed)::after {
+    color: white !important; /* Arrow icon color when active */
+}
+
+.accordion-button.collapsed {
+    color: #210070; /* Text color when collapsed */
+    background-color: white; /* Background when collapsed */
+}
+
+.accordion-button::after {
+    color: #210070; /* Arrow icon color when collapsed */
+}
+
+/* Accordion Body Styling */
+.accordion-body {
+    padding: 15px;
+    background-color: #210070;
+    font-size: 16px;
+    color: white;
+    border-top: none !important; /* Remove divider between title and body */
+}
+
+/* Remove border between accordion items */
+.accordion-collapse {
+    border: none !important;
+}
+
+
+/*.accordion-button:hover {*/
+/*    background-color: #00e0d0;*/
+/*    color: white;*/
+/*}*/
+
+
+/* Blog Section Styling */
+.blog-section {
+    background-color: #f5f8fa;
+    padding: 60px 0;
+}
+
+.blog-heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: #210070;
+}
+
+.blog-subheading {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Main article styling */
+.blog-main-article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #210070;
+}
+
+.blog-author {
+    font-size: 14px;
+    color: #666;
+}
+
+.blog-desc {
+    font-size: 16px;
     color: #333;
 }
 
-.faq .accordion-button:not(.collapsed) {
-    background-color: #007bff;
+.read-more {
+    color: #210070;
+    text-decoration: underline;
+}
+
+.main-blog-image img {
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+}
+
+/* Right side smaller blog items */
+/* Blog Section Styling */
+.blog-section {
+    padding: 60px 0;
+}
+
+.blog-heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: #210070;
+}
+
+.blog-subheading {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Main article styling */
+.blog-main-article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.blog-main-article .blog-content {
+    max-width: 30%;
+}
+
+.blog-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #210070;
+}
+
+.blog-author {
+    font-size: 14px;
+    color: #666;
+}
+
+.blog-desc {
+    font-size: 16px;
+    color: #333;
+}
+
+.read-more {
+    color: #210070;
+    text-decoration: underline;
+}
+
+.main-blog-image img {
+    width: 100%;
+    /*max-width: 250px;*/
+    border-radius: 8px;
+}
+
+/* Right side smaller blog items */
+.blog-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*border-bottom: 0.5px solid #210070;*/
+}
+
+.blog-item-image img {
+    width: 100%;
+    border-radius: 2px;
+}
+
+.blog-item-content {
+    width: 70%;
+}
+
+.blog-item-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #210070;
+}
+
+.blog-item-desc {
+    font-size: 14px;
+    color: #666;
+}
+
+.blog-item-author {
+    font-size: 12px;
+    color: #999;
+}
+
+.blog-section hr {
+    width: 95%;
+    margin: 20px auto;
+}
+
+
+/* Button styling */
+.btn-blog {
+    background-color: #210070;
+    color: white;
+    padding: 10px 30px;
+    min-width: 200px;
+    border: none;
+}
+
+.btn-blog:hover {
+    background-color: #00e0d0;
     color: white;
 }
 
-.footer {
-    background-color: #101820;
-    color: #fff;
+footer {
+    background-color: #210070; /* Dark blue background */
+    color: #f5f8fa; /* White text */
+    padding-top: 20px;
 }
 
-.footer .social-links img {
-    width: 30px;
-    margin: 0 10px;
+footer img {
+    margin-bottom: 1rem;
+    width: 60%;
 }
+
+footer ul {
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer ul li a {
+    color: #f5f8fa;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #ccc;
+}
+
+footer .list-inline-item a {
+    color: #f5f8fa;
+    font-size: 18px;
+}
+
+footer .list-inline-item a:hover {
+    color: #ccc;
+}
+
+footer img.img-fluid {
+    max-width: 50px;
+    margin-right: 20px;
+}
+
+footer .footer-cont {
+    margin: 0;
+    font-size: 14px;
+    width: 70%;
+}
+
+footer ul li a i {
+    color: #f5f8fa;
+}
+
+footer .copyright {
+    background-color: #787878;
+}
+
