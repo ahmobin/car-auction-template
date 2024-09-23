@@ -436,6 +436,10 @@ footer .footer-cont {
     width: 70%;
 }
 
+footer .mobile-view-social-medias{
+    display: none;
+}
+
 footer ul li a i {
     color: #f5f8fa;
 }
