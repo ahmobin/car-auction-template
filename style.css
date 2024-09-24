@@ -448,3 +448,68 @@ footer .copyright {
     background-color: #787878;
 }
 
+
+
+/* General body padding */
+.auction-list {
+    padding: 20px 0;
+}
+
+.auction-list h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.auction-list p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.auction-list .btn-primary {
+    background-color: #0044cc;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.auction-list .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.auction-list .card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.auction-list .card:hover {
+    transform: scale(1.05);
+}
+
+.auction-list .card-img-top {
+    height: 180px;
+    object-fit: contain;
+}
+
+.card-img-top img {
+    border: 3px solid red;
+}
+
+.card-img-top .matched {
+    border: 3px solid green;
+}
+
+.auction-list .card-body {
+    padding: 10px;
+}
+
+.auction-list .btn-danger {
+    background-color: #dc3545;
+    border: none;
+    padding: 10px;
+    width: 100%;
+}
