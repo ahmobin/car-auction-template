@@ -444,6 +444,10 @@ footer ul li a i {
     color: #f5f8fa;
 }
 
+footer .pgw-img{
+    width: 25%;
+}
+
 footer .copyright {
     background-color: #787878;
 }
@@ -552,7 +556,7 @@ footer .copyright {
 
 .blog-post .date {
     font-size: 0.9rem;
-    color: #007bff;
+    color: #37E0D0;
     font-weight: bold;
 }
 
@@ -574,6 +578,7 @@ footer .copyright {
 .blog-post .author {
     display: inline-block;
     margin-right: 10px;
+    color: #210070;
 }
 
 .blog-post .author i {
@@ -594,16 +599,25 @@ footer .copyright {
 }
 
 .recent-posts ul li {
-    margin-bottom: 10px;
+    background-color: #fff; /* Light background for each item */
+    border: 1px solid #ddd; /* Slight border around the items */
+    margin-bottom: 10px; /* Space between each item */
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.recent-posts ul li:hover {
+    background-color: #f1f1f1; /* Slight hover effect */
 }
 
 .recent-posts ul li a {
-    color: #007bff;
+    color: #8c8c8c;
     text-decoration: none;
     font-size: 1rem;
 }
 
 .recent-posts ul li a:hover {
-    text-decoration: underline;
+    color: #37E0D0;
 }
 

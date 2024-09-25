@@ -28,6 +28,11 @@
     .btn-blog {
         width: 100%;
     }
+
+    footer .pgw-img{
+        width: 50%;
+    }
+
 }
 
 @media (max-width: 767.98px) {
@@ -71,5 +76,23 @@
 
     footer .mobile-view-social-medias{
         display: block;
+    }
+}
+
+@media (max-width: 575.98px) {
+    footer .footer-logo,
+    footer .footer-cont,
+    footer ul li{
+        text-align: center;
+        margin: auto;
+    }
+
+    footer ul li{
+        list-style: none;
+    }
+
+    footer .footer-logo{
+        margin-bottom: 20px;
+        display: flex;
     }
 }
