@@ -549,28 +549,35 @@ footer .copyright {
 }
 
 
-
 /* General body padding */
-.auction-list {
-    padding: 20px 0;
-}
-
 .auction-list h3 {
     font-size: 1.8rem;
     font-weight: bold;
     color: #333;
+    margin-bottom: 20px;
 }
 
 .auction-list p {
     font-size: 1.1rem;
     color: #555;
+    line-height: 1.1rem;
 }
 
-.auction-list .btn-primary {
+.auction-list .info p {
+    color: #210070;
+}
+
+.auction-list .info p span {
+    color: #37E0D0;
+}
+
+.auction-list .btn-auction {
     background-color: #0044cc;
     border: none;
     padding: 10px 20px;
     margin-top: 10px;
+    color: #fff;
+    font-weight: 500;
 }
 
 .auction-list .row {
@@ -599,7 +606,7 @@ footer .copyright {
 }
 
 .auction-list .card-img-top {
-    height: 180px;
+    /*height: 180px;*/
     object-fit: contain;
 }
 
