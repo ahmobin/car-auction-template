@@ -39,8 +39,13 @@
     /* Small devices (Mobile phones) */
 
     .hero-section {
-        padding: 20px 0;
+        padding: 15px 0;
         height: 40vh;
+    }
+
+    .hero-section .hero-text {
+        text-align: center;
+        margin-right: 0!important;
     }
 
     .hero-section .car-image {
