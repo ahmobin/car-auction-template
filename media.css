@@ -2,6 +2,10 @@
 @media (max-width: 991.98px) {
     /* Medium devices (Tablets) */
 
+    .pricing .card {
+        margin: 20px 60px;
+    }
+
     .blog-subtitle {
         width: 100%;
     }
