@@ -55,8 +55,8 @@ body {
     font-size: 16px; /* Adjust the size of icons */
 }
 
-.top-header .social-icons a:hover {
-    color: #ddd; /* Hover effect for the icons */
+.top-header .social-icons a i:hover {
+    color: #00e0d0; /* Hover effect for the icons */
 }
 
 /* Navbar Icons Styling */
@@ -69,13 +69,18 @@ body {
     font-weight: 500;
     color: #1C274C;
 }
+
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    color: #00e0d0;
+}
+
 .navbar-icons a {
     font-size: 20px; /* Adjust icon size */
     margin-left: 20px; /* Space between icons */
 }
 
 .navbar-icons a:hover {
-    color: #ddd; /* Hover effect for icons */
+    color: #00e0d0; /* Hover effect for icons */
 }
 
 .navbar-brand img {
@@ -132,6 +137,7 @@ body {
     background: linear-gradient(180deg, rgba(18, 255, 205, 0.4) 0%, #146CEF 100%);
     display: flex;
     flex-direction: column;
+    border-radius: 8px;
 }
 
 .chassis-form label {
@@ -176,10 +182,8 @@ body {
     right: 15%;
 }
 
-
-
 .report-section p {
-    font-size: 19px;
+    font-size: 22px;
     color: #210070;
     font-weight: 500;
     font-family: "Instrument Sans", sans-serif;
@@ -209,8 +213,9 @@ body {
 .pricing .card {
     border: 1px solid #210070;
     border-radius: 0;
-    background-color: #f1faff;
+    background-color: #fff;
     margin: 40px 0;
+    padding: 15px 10px 15px 10px;
 }
 
 .pricing .card .card-body h5 {
@@ -232,7 +237,7 @@ body {
 .pricing .price-save {
     background: linear-gradient(180deg, rgba(18, 255, 205, 0.3) 0%, #146CEF 100%);
     color: #210070;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     border: none;
@@ -244,6 +249,11 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+}
+
+.pricing .btn-reset{
+    font-weight: 600;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* FAQ Section Styling */
@@ -369,6 +379,7 @@ body {
 
 .featured-content {
     width: 35%; /* Adjust width as needed */
+    padding-right: 15px;
 }
 
 .featured-img-container {
@@ -493,11 +504,11 @@ footer ul li {
 footer ul li a {
     color: #f5f8fa;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: 0.3s;
 }
 
 footer ul li a:hover {
-    color: #ccc;
+    color: #00e0d0!important;
 }
 
 footer .list-inline-item a {
@@ -506,7 +517,7 @@ footer .list-inline-item a {
 }
 
 footer .list-inline-item a:hover {
-    color: #ccc;
+    color: #00e0d0!important;
 }
 
 footer img.img-fluid {
