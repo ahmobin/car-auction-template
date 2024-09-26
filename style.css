@@ -327,12 +327,6 @@ body {
     border: none !important;
 }
 
-
-/*.accordion-button:hover {*/
-/*    background-color: #00e0d0;*/
-/*    color: white;*/
-/*}*/
-
 .blog {
     background-color: #EAFEFB;
     padding: 50px 0;
@@ -356,7 +350,7 @@ body {
 .blog-featured {
     display: flex;
     justify-content: space-between;
-    align-items: stretch; /* Ensures the image and content are the same height */
+    align-items: stretch;
     padding-left: 15px;
     margin-bottom: 30px;
 }
@@ -421,20 +415,33 @@ body {
     border-bottom: 1px solid #ddd;
 }
 
+.blog-small-item .row{
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*align-items: stretch!important;*/
+}
+
+/*.blog-small-item .row .col-4 {*/
+/*    width: 30%; !* Adjust width as needed *!*/
+/*}*/
+
+/*.featured-img-container .col-8 {*/
+/*    width: 70%; !* Adjust width to your liking *!*/
+/*}*/
+
 .blog-small-title {
     font-family: "Raleway", sans-serif;
     font-size: 13px;
     font-weight: 500;
-    line-height: 40px;
+    /*line-height: 40px;*/
     color: #210070;
-
 }
 
 .blog-small-description {
     font-family: "Raleway", sans-serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 18px;
+    /*line-height: 18px;*/
     color: #210070;
 }
 
@@ -443,7 +450,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     font-weight: 400;
-    line-height: 15px;
+    /*line-height: 15px;*/
     color: #210070;
 }
 
