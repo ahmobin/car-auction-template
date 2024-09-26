@@ -81,18 +81,21 @@
 
 @media (max-width: 575.98px) {
     footer .footer-logo,
-    footer .footer-cont,
-    footer ul li{
+    footer .footer-cont-1{
         text-align: center;
         margin: auto;
     }
 
-    footer ul li{
-        list-style: none;
+    footer ul {
+        margin-left: 20px;
     }
 
     footer .footer-logo{
         margin-bottom: 20px;
         display: flex;
+    }
+
+    footer ul li{
+        list-style: none;
     }
 }

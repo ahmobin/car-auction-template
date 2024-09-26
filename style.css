@@ -1,4 +1,7 @@
-
+* {
+    margin: 0;
+    padding: 0;
+}
 
 .btn-purple {
     background-color: #210070;
@@ -17,26 +20,26 @@
 }
 
 .btn-find:hover {
-    background-color: #0f2028;
+    background-color: #0e2028;
     color: white;
     transition: 0.05s;
 }
 
 .btn-reset {
     background-color: #00e0d0;
-    color: white;
+    color: #210070;
     transition: 0.05s;
 }
 
 .btn-reset:hover {
     background-color: #00f9e9;
-    color: #fff;
+    color: #210070;
     transition: 0.05s;
 }
 
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Raleway", sans-serif;
     color: #333;
 }
 
@@ -57,9 +60,14 @@ body {
 }
 
 /* Navbar Icons Styling */
+.navbar .navbar-nav .nav-item{
+    margin-right: 30px;
+}
 .navbar .navbar-nav .nav-item .nav-link{
+    font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 500;
+    color: #1C274C;
 }
 .navbar-icons a {
     font-size: 20px; /* Adjust icon size */
@@ -75,28 +83,29 @@ body {
 }
 
 .navbar-nav .nav-link.active {
-    color: #00e0d0; /* Change active link text color */
+    color: #00e0d0!important; /* Change active link text color */
     position: relative;
 }
 
 .navbar-nav .nav-link.active::after {
     content: '';
     position: absolute;
-    width: 100%; /* Adjust width to control the length of the underline */
+    width: 120%; /* Adjust width to control the length of the underline */
     height: 3px; /* Adjust thickness of the underline */
     background-color: #00e0d0; /* Match color to the active link text */
-    left: 0%; /* Center the underline under the text */
-    bottom: -5px; /* Position the underline a little below the text */
+    left: -10%; /* Center the underline under the text */
+    bottom: -10px; /* Position the underline a little below the text */
     border-radius: 5px; /* Optional: make the underline slightly rounded */
 }
 
 
 .hero-section {
-    background: linear-gradient(180deg, rgba(18, 255, 205, 0.4) 0%, #146CEF 200%);
+    background: linear-gradient(180deg, rgba(18, 255, 205, 0.4) 0%, #146CEF 100%);
     padding: 60px 0;
     position: relative;
     overflow: hidden;
     min-height: 70vh;
+    /*margin-top: -5px;*/
 }
 
 
@@ -113,8 +122,9 @@ body {
 }
 
 .hero-text p {
+    font-family: "Raleway", sans-serif;
     font-size: 18px;
-    color: #8c8c8c;
+    color: #787878;
     margin-bottom: 30px;
 }
 
@@ -172,25 +182,30 @@ body {
     font-size: 19px;
     color: #210070;
     font-weight: 500;
+    font-family: "Instrument Sans", sans-serif;
 }
 
 .pricing {
-    background: linear-gradient(180deg, rgba(18, 255, 205, 0.4) 0%, #146CEF 100%);
+    background-color: #EAFEFB;
+
 }
 
 .pricing h2 {
+    font-family: "Instrument Sans", sans-serif;
     font-size: 32px;
     font-weight: bold;
     color: #210070;
 }
 
 .pricing .card {
-    border: none;
+    border: 1px solid #210070;
+    border-radius: 0;
     background-color: #f1faff;
     margin: 40px 0;
 }
 
 .pricing .card .card-body h5 {
+    font-family: "Instrument Sans", sans-serif;
     font-size: 22px;
     font-weight: 600;
     line-height: 26px;
@@ -198,6 +213,7 @@ body {
 }
 
 .pricing .report-price {
+    font-family: "Instrument Sans", sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
@@ -214,6 +230,7 @@ body {
 }
 
 .pricing .report-nums {
+    font-family: "Instrument Sans", sans-serif;
     color: #210070;
     font-weight: 500;
     font-size: 20px;
@@ -226,6 +243,7 @@ body {
 }
 
 .faq-heading {
+    font-family: "Instrument Sans", sans-serif;
     font-size: 32px;
     font-weight: bold;
     color: #210070;
@@ -255,6 +273,7 @@ body {
 
 /* Accordion Button Styling */
 .accordion-button {
+    font-family: "Inter", sans-serif;
     background-color: white;
     color: #210070;
     font-size: 18px;
@@ -286,6 +305,7 @@ body {
 
 /* Accordion Body Styling */
 .accordion-body {
+    font-family: "Inria Sans", sans-serif;
     padding: 15px;
     background-color: #210070;
     font-size: 16px;
@@ -305,20 +325,23 @@ body {
 /*}*/
 
 .blog {
-    background-color: #f5f8fa;
+    background-color: #EAFEFB;
     padding: 50px 0;
 }
 
 .blog-title {
+    font-family: "Raleway", sans-serif;
     font-weight: bold;
     color: #300080;
 }
 
 .blog-subtitle {
+    font-family: "Raleway", sans-serif;
     margin: auto;
     margin-bottom: 40px;
     color: gray;
     width: 35%;
+    color: #210070;
 }
 
 .blog-featured {
@@ -329,12 +352,24 @@ body {
     margin-bottom: 30px;
 }
 
+.blog-featured .blog-author{
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    color: #210070;
+}
+
+.blog-featured .blog-date{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #210070;
+}
+
 .featured-content {
-    width: 30%; /* Adjust width as needed */
+    width: 35%; /* Adjust width as needed */
 }
 
 .featured-img-container {
-    width: 70%; /* Adjust width to your liking */
+    width: 65%; /* Adjust width to your liking */
 }
 
 .featured-img {
@@ -344,20 +379,27 @@ body {
 }
 
 .blog-featured-title {
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #210070;
 }
 
 .blog-featured-description {
-    color: #666;
+    font-family: "Raleway", sans-serif;
+    color: #210070;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 .blog-read-more {
-    display: inline-block;
-    margin-top: 10px;
-    color: #300080;
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    color: #210070;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .blog-read-more:hover {
@@ -371,12 +413,29 @@ body {
 }
 
 .blog-small-title {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #210070;
+
 }
 
 .blog-small-description {
-    color: #666;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #210070;
+}
+
+.blog-small-item .blog-author,
+.blog-small-item .blog-date{
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #210070;
 }
 
 .btn-blog {
@@ -397,6 +456,9 @@ footer {
     background-color: #210070; /* Dark blue background */
     color: #f5f8fa; /* White text */
     padding-top: 20px;
+    font-family: "Instrument Sans", sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 footer img {
@@ -436,7 +498,8 @@ footer img.img-fluid {
     margin-right: 20px;
 }
 
-footer .footer-cont {
+footer .footer-cont-1,
+footer .footer-cont-2 {
     margin: 0;
     font-size: 14px;
     width: 70%;
