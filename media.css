@@ -42,11 +42,6 @@
 @media (max-width: 767.98px) {
     /* Small devices (Mobile phones) */
 
-    .hero-section {
-        padding: 15px 0;
-        height: 40vh;
-    }
-
     .hero-section .hero-text {
         text-align: center;
         margin-right: 0!important;
@@ -98,6 +93,35 @@
 }
 
 @media (max-width: 575.98px) {
+    .hero-section {
+        padding: 15px 0;
+    }
+
+    .pricing .card {
+        margin: 10px 0;
+        padding: 15px 10px 15px 10px;
+    }
+
+    .pricing .card .card-body h5 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .pricing .report-price {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .pricing .price-save {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .pricing .report-nums {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
     footer .footer-logo,
     footer .footer-cont-1{
         text-align: center;
