@@ -439,6 +439,16 @@ body {
 /*    width: 70%; !* Adjust width to your liking *!*/
 /*}*/
 
+.blog-small-item a{
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.blog-small-item a:hover .blog-small-title{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
 .blog-small-title {
     font-family: "Raleway", sans-serif;
     font-size: 13px;
@@ -736,3 +746,129 @@ footer .copyright {
     color: #37E0D0;
 }
 
+/*
+Account page
+*/
+.account-page {
+    min-height: 60vh;
+    padding: 30px 0;
+  }
+
+.sidebar {
+    background-color: #F8F9FA;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.sidebar a {
+    color: #210070;
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a.active, .sidebar a:hover {
+    background-color: #00E0D9;
+    color: #fff;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #F8F9FA;
+    margin-left: 20px;
+    border-radius: 8px;
+    transition: max-height 0.5s ease;
+}
+
+.dropdown-content a {
+    color: #210070;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #146CEF;
+}
+
+.dropdown.active .dropdown-content {
+    max-height: 500px; /* Set an appropriate height depending on the content */
+}
+
+.content-area {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.header-title {
+    color: #210070;
+    margin-bottom: 20px;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 22px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.content-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.content-cards .card {
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.content-cards .card-title {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content-cards .card-number {
+    font-size: 2.5rem;
+    color: #210070;
+    font-weight: bold;
+}
+
+  
